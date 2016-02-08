@@ -6,6 +6,7 @@ installURL="https://www.backblaze.com/b2/docs/b2sync_for_mac.zip"
 extractedFolder="b2sync_for_mac"
 tmpDir="/tmp"
 groupOwner="admin"
+scriptVer="v0.3"
 
 ## Verify /usr/local/bin/ exists
 # should if brew is installed
@@ -56,3 +57,5 @@ rm -rf "$tmpDir"/$extractedFolder
 ## Get version of b2sync
 echo -n "It looks like b2sync is installed at "
 $installDir/b2sync -otheroption -version
+
+echo "$0 is $scriptVer"
