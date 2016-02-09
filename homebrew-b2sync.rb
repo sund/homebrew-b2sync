@@ -7,8 +7,6 @@ class HomebrewB2sync < Formula
 
   def install
       bin.install "b2sync"
-
-      system "./b2syncinstall.sh"
   end
 
   test do
