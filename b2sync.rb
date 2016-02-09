@@ -7,10 +7,8 @@ class B2sync < Formula
 
   def install
     bin.install "b2sync"
-    system "echo", "Enter sudo password to install Log dir"
     system "sudo", "mkdir", "-p", "/Library/Logs/b2sync/logs"
     system "sudo", "touch", "/Library/Logs/b2sync/b2sync"
-    system "b2sync", "-otheroption", "-version"
   end
 
   test do
