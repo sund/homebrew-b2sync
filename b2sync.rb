@@ -7,8 +7,8 @@ class B2sync < Formula
 
   def install
       bin.install "b2sync"
-      system "mkdir -p /Library/Logs/b2sync/logs"
-      system "touch /Library/Logs/b2sync/b2sync"
+      system "sudo mkdir -p /Library/Logs/b2sync/logs"
+      system "sudo touch /Library/Logs/b2sync/b2sync"
   end
 
   test do
