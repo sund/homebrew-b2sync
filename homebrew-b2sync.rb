@@ -6,7 +6,12 @@ class HomebrewB2sync < Formula
   sha256 "bf721362204311c692838af9fbc1fe537a04e7607d6e78b8f4ed47b959dc7119"
 
   def install
-      bin.install "b2syncinstall.sh"
+      bin.install "b2sync"
+
+      system "./b2syncinstall.sh"
   end
 
+  test do
+      system "#{bin}/b2sync", "-otheroption", "-version"
+  end
 end
