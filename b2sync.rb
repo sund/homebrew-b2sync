@@ -5,13 +5,15 @@ class B2sync < Formula
   version "0.5"
   sha256 "e3fc7fd87c46d186f7fefc8451d87deb624496b38193914e3bb7fce08c7089ad"
 
-def install
-  bin.install "b2sync"
-  system "sudo", "mkdir", "-p", "/Library/Logs/b2sync/logs"
-  system "sudo", "touch", "/Library/Logs/b2sync/b2sync"
-end
+  def install
+    bin.install "b2sync"
+    system "echo", "Enter sudo password to install Log dir"
+    system "sudo", "mkdir", "-p", "/Library/Logs/b2sync/logs"
+    system "sudo", "touch", "/Library/Logs/b2sync/b2sync"
+    system "b2sync", "-otheroption", "-version"
+  end
 
-test do
+  test do
     system "#{bin}/b2sync", "-otheroption", "-version"
   end
 end
