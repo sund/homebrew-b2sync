@@ -1,5 +1,5 @@
 class B2sync < Formula
-  desc "backblaze b2sync installer for brew"
+  desc "Backblaze's command line rsync-like utility for B2"
   homepage "https://github.com/sund/homebrew-b2sync"
   url "https://github.com/sund/homebrew-b2sync/archive/v0.5.tar.gz"
   version "0.5"
