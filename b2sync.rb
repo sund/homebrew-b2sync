@@ -3,7 +3,7 @@ class B2sync < Formula
   homepage "http://sund.github.io/homebrew-b2sync"
   url "https://github.com/sund/homebrew-b2sync/archive/0.6.0.4-1.0.tar.gz"
   version "0.6.0.4-1.0"
-  sha256 "e3fc7fd87c46d186f7fefc8451d87deb624496b38193914e3bb7fce08c7089ad"
+  sha256 "8d615cb63d7e75a1e0b14ced3502fa5938bc117a9ee5de87931af8f7367017b0"
 
   def install
     bin.install "b2sync"
